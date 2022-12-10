@@ -1,0 +1,17 @@
+---
+# file: roles/nginx/defaults/main.yml
+
+#  MUST change this path to where you put those pems!!!
+# local_pems_path: "~"
+# local_pems_filename: "{{env}}.dlivecdn.com.pem"
+
+#nginx_port: 443
+nginx_cors_file: "/etc/nginx/cors"
+nginx_conf_file: "/etc/nginx/nginx.conf"
+nginx_exec_file: "/usr/sbin/nginx"
+nginx_service_file: "/lib/systemd/system/nginx.service"
+
+# nginx_ssl_certificate: "/etc/nginx/{{env}}.dlivecdn.com.pem"
+# nginx_ssl_certificate_key: "/etc/nginx/{{env}}.dlivecdn.com.pem"
+
+nginx_log_file_maxsize: "200M"

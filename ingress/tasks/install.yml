@@ -1,0 +1,10 @@
+
+- name: add official nginx repository
+  apt_repository:
+    repo: ppa:nginx/stable
+
+- name: install nginx and ensure its at the latest version
+  apt: 
+    name: nginx 
+    state: latest
+    force: yes

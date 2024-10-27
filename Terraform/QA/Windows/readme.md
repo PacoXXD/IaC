@@ -1,1 +1,0 @@
-These files are to provision the windows server in AWS for QA.
